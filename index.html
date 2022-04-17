@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Пощенска банка</title>
+    <script language="javascript">
+      function winproz() {
+        window.open(
+          "banka.html",
+          "win1",
+          "top=300, left=755, width=333, height=222, status=yes"
+        );
+      }
+    </script>
+  </head>
+  <body bgcolor="lightblue">
+    <h2 onclick="winproz()"><a href="#">Пощенска банка</a></h2>
+
+    <table border="4" bordercolor="black" cellspacing="0" cellpadding="9" width="44%">
+      <caption>
+        <big><b>Лихвени нива</b></big>
+      </caption>
+      <tr>
+        <th colspan="2">Валута</th>
+        <th>Лева</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Нива</td>
+        <td colspan="2" align="center">Периоди</td>
+      </tr>
+      <tr>
+        <td>Три месеца</td>
+        <td>Шест месеца</td>
+      </tr>
+      <tr>
+        <td> 100 - 1000</td>
+        <td align="right"> 1,53%</td>
+        <td align="right"> 2,54%</td>
+      </tr>
+      <tr>
+        <td>1000,01 - 3000</td>
+        <td align="right">2,22%</td>
+        <td align="right">3,33%</td>
+      </tr>
+      <tr>
+        <td>Над 3000</td>
+        <td align="right">3,15%</td>
+        <td align="right">4,35%</td>
+      </tr>
+      <tr><th>Web - Майстор <th colspan="2">Неделчо Динев</th> </th></tr>
+    </table>
+    <big><b>
+    <form name="f1" action="Zad5Red.php" method="post">
+      Задайте начална сума >= 100: <input
+        type="text"
+        name="nsum"
+        style="margin-bottom: 20px"
+      /><br />
+      Задайте периода в брой месеци (3 или 6): <input
+        type="text"
+        name="broi"
+        size="8"
+        style="margin-bottom: 20px"
+      /><br />
+
+      <input type="submit" value="Смятане" />
+    </form>
+    </b></big>
+  </body>
+</html>
